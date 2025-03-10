@@ -2,7 +2,7 @@ import { defineConfig } from "vitepress";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-    base: "/chadwu-tt0312/",
+    base: "/chadwu-tt0312.github.io/",
     title: "My VitePress Project",
     description: "A VitePress Site",
     themeConfig: {
