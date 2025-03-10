@@ -2,6 +2,7 @@ import { defineConfig } from "vitepress";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+    // 需要額外添加 base 設定 "/<repos_name>/"
     base: "/chadwu-tt0312.github.io/",
     title: "My VitePress Project",
     description: "A VitePress Site",
