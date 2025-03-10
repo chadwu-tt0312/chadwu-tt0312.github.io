@@ -1,11 +1,11 @@
 name: Deploy VitePress site to Pages
 on:
   push:
-    #推送任意tags或master分支推送的時候觸發任務
+    #推送任意tags或main分支推送的時候觸發任務
     tags:
       - "*"
     branches:
-      - master
+      - main
 
   workflow_dispatch:
 
@@ -16,7 +16,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          ref: "master"
+          ref: "main"
 
       - name: Install yarn
         run: corepack enable
@@ -60,5 +60,5 @@ jobs:
       #     gitee-password: ${{ secrets.GITEE_PASSWORD }}
       #     # 注意替換為你的 Gitee 倉庫,倉庫名嚴格區分大小寫,請準確填寫,否
       #     gitee-repo: chargeduck/notes
-      #     #要部署的分支,預設是 master,若是其他分支,則需要指定(指定的分
+      #     #要部署的分支,預設是 main,若是其他分支,則需要指定(指定的分
       #     branch: gh-pages
